@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="assets/vendor/jquery-1.11.3.js"></script>
+	<script src="assets/javascripts/editor.js"></script>
+</head>
+<body>
+	<textarea id="editor"></textarea>
+
+	<p class="reverse"></p>
+
+	
+	<script type="text/javascript">
+	  var editor = $('#editor');
+	  editor.bind('input', function () {
+	  	$('.reverse').html(editor.val().split('').reverse().join(''));
+	  })
+	</script>
+</body>
+</html>
