@@ -8,13 +8,13 @@
 <body>
 	<textarea id="editor"></textarea>
 
-	<p class="reverse"></p>
+	<p class="preview"></p>
 
 	
 	<script type="text/javascript">
 	  var editor = $('#editor');
 	  editor.bind('input', function () {
-	  	$('.reverse').html(editor.val().split('').reverse().join(''));
+	  	$('.preview').html(editor.val());
 	  })
 	</script>
 </body>
