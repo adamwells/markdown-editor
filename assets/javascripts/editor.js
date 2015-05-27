@@ -1,6 +1,4 @@
-include '../vendor/markdown-0.6.0-beta1/lib/markdown.js'
-
-var editor = $('#editor');
+var editor = $('#input-box');
 editor.bind('input', function () {
-	$('.preview').html(editor.val());
+	$('.preview').html(markdown.toHTML(editor.val()));
 })
