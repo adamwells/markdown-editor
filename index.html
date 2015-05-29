@@ -5,12 +5,23 @@
 	
 	<script src="assets/vendor/jquery-1.11.3.js"></script>
 	<script src="assets/vendor/markdown-browser-0.6.0-beta1/markdown.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
 	
 </head>
 <body>
 
-	<textarea id="input-box"></textarea>
-	<div class="preview"></div>
+<div class="content">
+	<div class="editor">
+		<textarea class="input-box"></textarea>
+	</div>
+	
+	<div class="preview">
+		<div class="rendered-markdown"></div>
+	</div>
+</div>
+
+<button class="download">Download Markdown</button>
+	
 
 	<script src="assets/javascripts/editor.js"></script>
 </body>
